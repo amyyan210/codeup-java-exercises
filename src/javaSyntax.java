@@ -1,12 +1,12 @@
-public class java_syntax {
+public class javaSyntax {
     public static void main (String[] args) {
         int myFavoriteNumber = 22;
-        System.out.println(myFavoriteNumber);
+        System.out.println(myFavoriteNumber + " is my favorite number.");
 
         String myString = "Hello, Redwood!";
 
       // "Incompatible types" - string assigned to character type
-//      char myString = "Hello, Redwood!";
+//      char myString = 'Hello, Redwood!';
 
     //  "Incompatible types" - number assigned to string type
 //      String myString = 3.14159;
