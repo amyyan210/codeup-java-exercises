@@ -9,21 +9,24 @@ public class ConsoleExercises {
         int userNumber = scan.nextInt();
         System.out.println("Your number is " + userNumber + ".");
 
-        System.out.println("Please enter three different words with a return in between.");
-        String firstWord = scan.nextLine();
-        String secondWord = scan.nextLine();
-        String thirdWord = scan.nextLine();
+        System.out.println("Please enter three different words.");
+        String firstWord = scan.next(); // delimiter is a space
+        String secondWord = scan.next();
+        String thirdWord = scan.next();
 
         System.out.println("Your words are " + firstWord + ", " + secondWord + ", and " + thirdWord + ".");
 
+        scan.nextLine(); // This is the extra \n (enter) so that following nextLine() isn't ignored
+
         System.out.println("Please write a sentence.");
-        String userSentence = scan.nextLine();
+        String userSentence = scan.nextLine(); // delimiter is enter
         System.out.println(userSentence);
+
 
         System.out.println("Please enter the width and height (in feet) of the Codeup classroom with a return in between.");
         String width = scan.nextLine();
         String height = scan.nextLine();
-        float floatWidth = Float.parseFloat(width); //wrapper class to change data types from string to float
+        float floatWidth = Float.parseFloat(width); //wrapper class to change data types from string to number
         float floatHeight = Float.parseFloat(height);
         float area = floatWidth * floatHeight;
         float perimeter = (floatWidth * 2) + (floatHeight * 2);
@@ -34,3 +37,5 @@ public class ConsoleExercises {
     }
 
 }
+
+
