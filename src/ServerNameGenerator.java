@@ -1,19 +1,21 @@
+import java.util.Arrays;
+
 public class ServerNameGenerator {
-    String[] adjectives = {"pretty", "ugly", "nice", "mean", "deserving", "hopeful", "messy", "clean", "useful", "scary"};
-    String[] nouns = {"table", "chair", "laptop", "apartment", "cat", "friend", "city", "teacher", "leg", "face"};
+    private static String[] adjectives = {"pretty", "ugly", "nice", "mean", "deserving", "hopeful", "messy", "clean", "useful", "scary"};
+    private static String[] nouns = {"table", "chair", "laptop", "apartment", "cat", "friend", "city", "teacher", "leg", "face"};
 
 
-    public String getString() {
-//        for (String word: partOfSpeech) {
-//            return "Your " + partOfSpeech + " is " + word + ".";
-//        }
+    public static String getRandomString(String[] wordArray) {
 
-        return adjectives.toString();
+        int randomNumber = (int) (Math.random() * wordArray.length);
+
+        return wordArray[randomNumber];
     }
 
-//    public static void main(String[] args) {
-//        System.out.println(getString(adjectives));
-//        System.out.println(getString(nouns));
+    public static void main(String[] args) {
+        System.out.print(getRandomString(adjectives));
+        System.out.print("-");
+        System.out.print(getRandomString(nouns));
 
-//    }
+    }
 }
