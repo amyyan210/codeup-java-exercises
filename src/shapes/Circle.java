@@ -1,11 +1,22 @@
 package shapes;
+import java.lang.Math;
+import java.util.Scanner;
+import util.Input;
 
 public class Circle {
-    private float radius = 0.5;
+    private double radius;
+    double pi = Math.PI;
 
+    public Circle (double radius) {
+        this.radius = radius;
+    }
 
-    public Circle(double radius)
-    public double getArea()
-    public double getCircumference()
+    public double getArea() {
+        return pi * (java.lang.Math.pow(radius, 2));
+    }
+
+    public double getCircumference() {
+        return 2 * pi * radius;
+    }
 
 }
