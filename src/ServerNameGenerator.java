@@ -6,16 +6,15 @@ public class ServerNameGenerator {
 
 
     public static String getRandomString(String[] wordArray) {
-
         int randomNumber = (int) (Math.random() * wordArray.length);
 
         return wordArray[randomNumber];
     }
 
     public static void main(String[] args) {
+        System.out.println("Here is your server name: ");
         System.out.print(getRandomString(adjectives));
         System.out.print("-");
         System.out.print(getRandomString(nouns));
-
     }
 }
