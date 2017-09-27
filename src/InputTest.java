@@ -10,7 +10,7 @@ public class InputTest {
 
         System.out.println(input.yesNo());
 
-        System.out.println(input.getInt(0, 10));
+        System.out.println(input.getInt("Please enter a number between 0 and 10", 0, 10));
 
         System.out.println(input.getInt());
 

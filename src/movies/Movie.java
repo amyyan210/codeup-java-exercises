@@ -1,12 +1,19 @@
 package movies;
 
 public class Movie {
-    private static String name;
-    private static String category;
+    private String name;
+    private String category;
 
-    public Movie (String aName, String aCategory) {
-        this.name = aName;
-        this.category = aCategory;
+    public String getCategory() {
+        return category;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public Movie (String name, String category) {
+        this.name = name;
+        this.category = category;
+    }
 }
