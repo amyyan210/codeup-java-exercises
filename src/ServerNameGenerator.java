@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class ServerNameGenerator {
     private static String[] adjectives = {"pretty", "ugly", "nice", "mean", "deserving", "hopeful", "messy", "clean", "useful", "scary"};
     private static String[] nouns = {"table", "chair", "laptop", "apartment", "cat", "friend", "city", "teacher", "leg", "face"};
