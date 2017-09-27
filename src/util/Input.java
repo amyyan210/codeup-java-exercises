@@ -21,13 +21,14 @@ public class Input {
         }
     }
 
-    public int getInt(int min, int max) {
-        System.out.println("Please type an integer between " + min + " and " + max + ".");
+    public String prompt;
+    public int getInt(String prompt, int min, int max) {
+//        System.out.println("Please type an integer between " + min + " and " + max + ".");
         int userNumber = scanner.nextInt();
         if (userNumber >= min && userNumber <= max) {
             return userNumber;
         } else {
-            return getInt(min, max);
+            return getInt(prompt, min, max);
         }
     }
 
