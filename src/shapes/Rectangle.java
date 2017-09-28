@@ -16,4 +16,12 @@ public class Rectangle {
     public float getPerimeter () {
         return (2 * length) + (2 * width);
     }
+
+    public float getLength() {
+        return length;
+    }
+
+    public float getWidth() {
+        return width;
+    }
 }
