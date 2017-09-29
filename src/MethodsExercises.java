@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.lang.*;
 
+
 public class MethodsExercises {
     public static void main(String[] args) {
 //        System.out.println(add(1, 2));
@@ -10,7 +11,8 @@ public class MethodsExercises {
 //        System.out.println(remainder(11, 2));
 //        System.out.println(getInteger(1, 10));
 //        System.out.println(factorial(4));
-        System.out.println(rollDice(6));
+//        System.out.println(rollDice(6));
+        HighLow.guessGame();
     }
 
 //    public static int add (int a, int b) {
@@ -64,26 +66,28 @@ public class MethodsExercises {
 //    }
 
 
-    public static int rollDice (int n) {
-        Scanner scan = new Scanner(System.in);
+//    public static int rollDice (int n) {
+//        Scanner scan = new Scanner(System.in);
+//
+//        String userAnswer;
+//
+//        do {
+//            System.out.println("Enter the number of sides on your dice.");
+//            n = scan.nextInt();
+//
+//            System.out.println("Random number 1: " + Math.ceil(Math.random() * ((n - 1) + 1)));
+//            System.out.println("Random number 2: " + Math.ceil(Math.random() * ((n - 1) + 1)));
+//
+//            scan.nextLine();
+//
+//            System.out.println("Do you want to continue rolling the dice? Y | N");
+//            userAnswer = scan.nextLine();
+//
+//            return 0;
+//
+//        } while (userAnswer.equalsIgnoreCase("Y"));
+//    }
 
-        String userAnswer;
 
-        do {
-            System.out.println("Enter the number of sides on your dice.");
-            n = scan.nextInt();
-
-            System.out.println("Random number 1: " + Math.ceil(Math.random() * ((n - 1) + 1)));
-            System.out.println("Random number 2: " + Math.ceil(Math.random() * ((n - 1) + 1)));
-
-            scan.nextLine();
-
-            System.out.println("Do you want to continue rolling the dice? Y | N");
-            userAnswer = scan.nextLine();
-
-            return 0;
-
-        } while (userAnswer.equalsIgnoreCase("Y"));
-    }
 
 }
