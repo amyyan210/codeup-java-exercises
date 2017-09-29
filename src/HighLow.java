@@ -8,7 +8,7 @@ public class HighLow {
     public static void guessGame () {
 
         int randomNumber = (int) (Math.random() * 100) + 1;
-        System.out.println(randomNumber);
+//        System.out.println(randomNumber);
 
         System.out.println("Enter a number between 1 and 100.");
 
@@ -25,8 +25,8 @@ public class HighLow {
                 System.out.println("LOWER!");
             } else if (userNumber < randomNumber) {
                 System.out.println("HIGHER!");
+                System.out.println("GOOD GUESS! The random number was " + randomNumber + ".");
             } else if (userNumber == randomNumber) {
-                System.out.println("GOOD GUESS!");
             }
         } while (userNumber != randomNumber);
 
