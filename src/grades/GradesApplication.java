@@ -34,6 +34,8 @@ public class GradesApplication {
         student4.addGrade(50);
         student4.addGrade(100);
 
+
+        // Adding students to the HashMap
         students.put("amyyan210", student1);
         students.put("blahblah", student2);
         students.put("prettyGurl", student3);
@@ -45,7 +47,7 @@ public class GradesApplication {
 
     public static String getStudentInfo (HashMap<String, Student> students) {
 
-        System.out.println("Here are the github usernames of our students:");
+        System.out.println("Welcome! \nHere are the github usernames of our students:");
         for (String key : students.keySet()) {
             System.out.print("|" + key + "| ");
         }

@@ -14,11 +14,11 @@ public class Student {
     }
 
     public String getStudentName() {
-        return studentName;
+        return this.studentName;
     }
 
     public void addGrade(int grade) {
-        studentGrades.add(grade);
+        this.studentGrades.add(grade);
     }
 
     public double getGradeAverage() {
@@ -27,6 +27,7 @@ public class Student {
             sumOfGrades += studentGrades.get(i);
         }
         double average = (double) sumOfGrades / (double) studentGrades.size();
+
         //rounds to two decimal places
         return Math.round(average * 100.0) / 100.0;
     }
