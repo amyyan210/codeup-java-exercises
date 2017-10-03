@@ -6,7 +6,7 @@ public class CircleApp {
 
         Input input = new Input();
 
-        double userDouble = input.getDouble(0, 10);
+        double userDouble = input.getDouble("Please enter a double",0, 10);
 
         Circle circle = new Circle(userDouble);
 

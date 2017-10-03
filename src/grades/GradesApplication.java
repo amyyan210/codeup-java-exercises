@@ -47,7 +47,7 @@ public class GradesApplication {
 
     public static String getStudentInfo (HashMap<String, Student> students) {
 
-        System.out.println("Welcome! \nHere are the github usernames of our students:");
+        System.out.println("Welcome! \nHere are the Github usernames of our students:");
         for (String key : students.keySet()) {
             System.out.print("|" + key + "| ");
         }
@@ -62,7 +62,7 @@ public class GradesApplication {
             System.out.println(student.getStudentName() + " - Github username: " + userInput);
             System.out.println("Current average: " + student.getGradeAverage());
         } else {
-            System.out.println("Sorry, no student found with the github username of '" + userInput + "'.");
+            System.out.println("Sorry, no student found with the Github username of '" + userInput + "'.");
         }
 
         System.out.println("Would you like to see another student? Y | N");

@@ -5,14 +5,14 @@ public class Input {
     private Scanner scanner = new Scanner(System.in);
 
     public String getString() {
-        System.out.println("Type a sentence.");
+//        System.out.println("Type a sentence.");
         String sentence = scanner.nextLine();
         return sentence;
     }
 
     public boolean yesNo() {
         System.out.println("Type Y or N");
-        String YesOrNo = scanner.next();
+        String YesOrNo = scanner.nextLine();
 
         if (YesOrNo.equalsIgnoreCase("Y") || YesOrNo.equalsIgnoreCase("yes")){
             return true;
@@ -23,8 +23,7 @@ public class Input {
 
     public String prompt;
     public int getInt(String prompt, int min, int max) {
-//        System.out.println("Please type an integer between " + min + " and " + max + ".");
-        int userNumber = scanner.nextInt();
+        int userNumber = getInt();
         if (userNumber >= min && userNumber <= max) {
             return userNumber;
         } else {
@@ -33,21 +32,35 @@ public class Input {
     }
 
     public int getInt(){
-        return 0;
+        try {
+            int input = Integer.valueOf(getString());
+            return input;
+        } catch (NumberFormatException e) {
+            System.out.println(e.getMessage());
+            System.out.println("That's not an integer! Try again!");
+            return getInt();
+        }
     }
 
-    public double getDouble (double min, double max) {
-        System.out.println("Please type a decimal point number between " + min + " and " + max + ".");
-        double userNumber = scanner.nextDouble();
+    public String prompt2;
+    public double getDouble (String prompt2, double min, double max) {
+        double userNumber = getDouble();
         if (userNumber >= min && userNumber <= max) {
             return userNumber;
         } else {
-            return getDouble(min, max);
+            return getDouble(prompt, min, max);
         }
     }
 
     public double getDouble(){
-        return 0.0;
+        try{
+            double input = Double.valueOf(getString());
+            return input;
+        } catch (NumberFormatException e) {
+            System.out.println(e.getMessage());
+            System.out.println("That's not a double! Try again!");
+            return getDouble();
+        }
     }
 
 }
